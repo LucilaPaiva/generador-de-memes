@@ -1,0 +1,662 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+/* ************************************************************************************************
+                                            INICIO HEDER
+     ************************************************************************************************ */
+
+.headEstilo {
+  height: 18vh;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1.5%;
+  color: #e3f8e3;
+  background-color: #191e2b;
+}
+
+.headerTitulo {
+  font-size: 1.3em;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.headerContenedorDeBotones {
+  width: 50%;
+  margin: auto;
+  height: 6vh;
+}
+
+.boton {
+  font-size: 0.6em;
+  padding: 1.5%;
+  background-color: #191e2b;
+  color: #e3f8e3;
+  border: none;
+  border-radius: 5px;
+  font: bold;
+  height: 5vh;
+}
+
+.botonImg {
+  width: 13%;
+  margin-right: 1%;
+}
+
+.botonTexto {
+  width: 11%;
+  margin-right: 1%;
+}
+
+.botonModoOscuro,
+.botonModoClaro {
+  width: 20%;
+}
+
+.headerIcono {
+  width: 20%;
+  margin-right: 3%;
+}
+
+.oculto {
+  display: none;
+}
+
+.botonTexto:hover, .botonImg:hover, .botonModoClaro:hover, .botonModoOscuro:hover{
+  background-color: #434957;
+}
+
+.boton:focus {
+  background-color: #434957;
+}
+
+/* ************************************************************************************************
+                                            FINAL HEDER
+     ************************************************************************************************ */
+
+/* ************************************************************************************************
+                                            INICIO MAIN
+     ************************************************************************************************ */
+
+.mainContenedor {
+  color: #e3f8e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  background-image: url(https://fondosmil.com/fondo/57415.jpg);
+  height: 82vh;
+}
+
+.memeContenedor {
+  width: 35%;
+  background-color: #191e2b;
+  margin: 0;
+  height: 55vh;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.textTop,
+.textBottom {
+  background-color: white;
+  color: #191e2b;
+  height: 20%;
+  width: 100%;
+  margin: 0%;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 3%;
+  font-weight: bold;
+  position: static;
+}
+
+.imgMeme {
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+}
+
+.botonDescargar {
+  width: 12%;
+  padding: 15px;
+  margin-top: 1%;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.botonDescargar:hover{
+  background-color: #174b19;
+}
+
+/* ************************************************************************************************
+                                            INICIO PANEL IMAGEN
+     ************************************************************************************************ */
+
+
+.controlAside {
+  background-color: #272e3f;
+  color: #e3f8e3;
+  width: 16%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  height: 100%;
+  padding: 1%;
+}
+
+
+.botonCerrar {
+  margin-left: 90%;
+  font-size: 1em;
+  width: 8%;
+  background-color: #191e2b;
+  color: #e3f8e3;
+  border: none;
+  border-radius: 0.3em;
+  display: none;
+}
+
+
+
+
+.tituloPanelImagen {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.panelUrlImagen {
+  margin-top: 7%;
+  font-size: 0.85em;
+}
+
+.panelInputImagen {
+  background-color: #394052;
+  width: 100%;
+  height: 4vh;
+  border: none;
+  border-radius: 0.3em;
+  margin-top: 5%;
+  color: #e3f8e3;
+}
+
+.fondoTitulo {
+  font: bold;
+}
+
+.colorDeFondo {
+  font-size: 0.8em;
+  margin-top: 5%;
+}
+
+.fondoBotones {
+  display: flex;
+  margin-top: 5%;
+  height: 4vh;
+  width: 100%;
+}
+
+.btnColorFondo {
+  background-color: #394052;
+  width: 50%;
+  margin-right: 5%;
+  border-radius: 0.5em;
+  border: none;
+  display: flex;
+}
+
+.fondoInput { 
+  border: 0;
+  outline: 0; 
+  display: block;
+  margin: auto;
+  width: 25%;
+  border-radius: 50%;
+} 
+
+input[type='color'],
+input[type='color']::-webkit-color-swatch-wrapper,
+input[type='color']::-webkit-color-swatch {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 50%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+
+.spanFondo {
+margin: auto;
+}
+
+.modoSelector {
+  width: 50%;
+  background-color: #afb4c0;
+  border-radius: 0.5em;
+  border: none;
+}
+.modoColorFondo {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  padding-left: 5%;
+  border: none;
+  background-color: #394052;
+  color: #e3f8e3;
+}
+
+.selectorDeFiltro {
+  font-size: 0.8em;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.valoresDeContrastes {
+  margin-bottom: 2%;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContrastes {
+  font-size: 1em;
+  color: #e3f8e3;
+}
+
+input[type='range']{
+  background-color: #5a5d68;
+  appearance: none;
+  border-radius: 10px;
+  height: 0.5em;
+  margin-top: 1.2em;
+}
+
+.reestablecerFiltros {
+  margin-top: 5%;
+  padding: 5%;
+  background-color: #191e2b;
+  color: #e3f8e3;
+  border: none;
+  border-radius: 5px;
+  font: bold;
+}
+
+.reestablecerFiltros:hover{
+  background-color: #434957;
+}
+
+/* ************************************************************************************************
+                                            INICIO PANEL TEXTO
+     ************************************************************************************************ */
+
+.panelTextTitulo {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.panelControlTextTitulo {
+  font-size: 0.8em;
+  font: bold;
+  margin-top: 7%;
+}
+
+.textareaImput {
+  padding: 4%;
+  font-size: 0.9em;
+  background-color: #394052;
+  color: #e3f8e3;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.sinTexto {
+  font-size: 0.8em;
+  margin: 5% 0%;
+}
+
+.panelFuenteInput {
+  background-color: #394052;
+  color: #e3f8e3;
+  margin-top: 3%;
+  width: 100%;
+  padding: 3%;
+  border-radius: 3px;
+  border: none;
+}
+
+.panelControlTextoTamaño {
+  display: flex;
+  margin-top: 3%;
+}
+
+.panelAlineamiento {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.controlTamañoInput {
+  background-color: #394052;
+  color: #e3f8e3;
+  width: 50%;
+  padding: 0% 2%;
+  border-radius: 3px;
+  border: none;
+}
+
+.btnLado {
+  background-color: #394052;
+  color: #e3f8e3;
+  width: 25%;
+  padding: 8%;
+  border-radius: 3px;
+  border: none;
+}
+
+.btnLadoSelected {
+  background-color: #8b97b6;
+}
+
+.panelControlTexto {
+  margin-top: 10%
+}
+
+.colorTextoContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15%;
+}
+
+.divPanelTextoColor {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.colorTexto {
+  font-size: 1em;
+  width: 100%;
+  background-color: #394052;
+  margin-top: 5%;
+  margin-right: 10%;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.spanTextoColor {
+  font-size: 0.8em;
+  margin: auto;
+}
+ 
+.btnsContorno{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;;
+}
+
+.btnContorno{
+  background-color: #394052;
+  color: #e3f8e3;
+  border-radius: var(--border-radius);
+  font-size: 0.8em;
+  padding: 4%;
+  margin-top: 4%;
+  border-radius: 5px;
+  border: none;
+  width: 30%;
+}
+
+.btnContornoSelected {
+  background-color:  #464d5f;
+}
+
+.espacioInput{
+  background-color: #394052;
+  color: #e3f8e3;
+  margin-top: 3%;
+  width: 100%;
+  padding: 4%;
+  border-radius: 3px;
+  border: none;
+}
+
+.espacioInput:hover{
+  background-color: #464d5f;
+}
+
+.interlineadoInput{
+  background-color: #394052;
+  color: #e3f8e3;
+  margin-top: 3%;
+  width: 100%;
+  padding: 4%;
+  border-radius: 3px;
+  border: none;
+}
+
+.color:hover{
+  background-color: #464d5f;
+}
+
+.color:hover::after{
+  background-color: #e3f8e3;
+}
+
+/* modo claro/oscuro **************************************************************************************/
+
+.modoOscuro {
+  background-color: #394052;
+  color: #e3f8e3;
+}
+
+.modoOscuroHeader {
+  background-color: #191e2b;
+  color: #e3f8e3;
+}
+
+.modoOscuroBoton{
+  background-color: #191e2b;
+  color: #e3f8e3;
+}
+
+.modoOscuroBoton:focus{
+  background-color: #394052;
+}
+
+.modoOscuroAside{
+  background-color: #191e2b;
+  color: #e3f8e3;
+}
+
+/* ********************************claro******************************************************* */
+
+.modoClaro {
+  background-color: #c1e2c1;
+  color: #191e2b;
+}
+
+.modoClaroHeader {
+  background-color: #e3f8e3;
+  color: #191e2b;
+}
+
+.modoClaroBoton{
+  background-color: #e3f8e3;
+  color: #191e2b;
+}
+
+.modoClaroBoton:hover {
+  background-color: #d1dfd1;
+}
+
+.modoClaroAside{
+  background-color: #f0faf0;
+  color: #191e2b;
+}
+
+.modoClaro:hover {
+  background-color: #d1dfd1;
+}
+
+.modoClaroBoton:focus{
+  background-color: #d1dfd1;
+}
+
+
+@media screen and (max-width: 1300px) and (min-width: 700px){
+
+  .headerContenedorDeBotones {
+    width: 60%;
+  }
+
+  .boton {
+    width: 24%;
+  }
+
+  .memeContenedor{
+    width: 48%;
+  }
+
+  .controlAside{
+    width: 26%;
+    display: none;
+    height: 100%;
+  }
+
+  .botonCerrar {
+   display: block;
+  }
+
+  .botonDescargar{
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 980px) and (min-width: 699px){
+
+  .headerContenedorDeBotones {
+    width: 70%;
+    margin-top: 5%;
+  }
+
+  .boton {
+    width: 20%;
+  }
+
+  .memeContenedor{
+    width: 60%;
+  }
+
+  .botonDescargar{
+    width: 22%;
+  }
+
+  .botonModoClaro, .botonModoOscuro {
+    width: 25%;
+  }
+
+  .controlAside{
+    width: 28%;
+    display: none;
+    height: 100%;
+  }
+
+  .botonCerrar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px){
+
+  .headerTitulo{
+    font-size: 0.8em;
+    margin-top: 5%;
+  }
+
+  .headerContenedorDeBotones{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .boton {
+    width: 26%;
+    font-size: 0.6em;
+  }
+
+  .textTop, .textBottom{
+    font-size: 2em;
+  }
+
+
+  .botonModoClaro, .botonModoOscuro{
+    width: 41%;
+  }
+
+  .memeContenedor{
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .botonDescargar{
+    width: 45%;
+  }
+
+  .controlAside{
+    width: 100%;
+      height: 170vh;
+    display: none;
+    padding: 5%;
+  }
+
+  .botonCerrar {
+    display: block;
+  }
+
+  .panelInputImagen {
+  padding: 8%;
+  }
+
+  .fondoInput{
+  padding: 5%;
+  }
+
+  .btnContorno{
+    width: 25%;
+  }
+}
