@@ -6,7 +6,7 @@
 
 ### Esta página esta creada con HTML, CSS y JavaScript y te permite crear tu propio meme y descargarlo.
 
-> Esta página hecha en colaboración con https://github.com/VeroS04 muestra el progreso en HTML, CSS y lo aprendido de JavaScript(Eventos, DOM).
+> Esta página hecha en colaboración con https://github.com/VeroS04 muestra el progreso en HTML, CSS y lo aprendido de JavaScript(Eventos, DOM). Todos los commits del proceso los podés chequear desde el repositorio de Vero (el que linqueo arriba).
 
 ![gift](https://c.tenor.com/xCU1MH4C5cAAAAAC/nos-conseguimos-akai.gif)
 
